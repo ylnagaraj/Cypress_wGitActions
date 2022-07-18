@@ -7,7 +7,7 @@ import patientData from './patient.checkin.testdata'
 
 describe('Patient Check-in KIOSK', () => {
 
-    it('TC_UI_001 - Patient Successful Check-in', () => {
+    xit('TC_UI_001 - Patient Successful Check-in', () => {
       
         WelcomePage.startCheckin(patientData.validLastName, patientData.validDOB);
         WelcomePage.clickPatientBtn();
@@ -17,7 +17,7 @@ describe('Patient Check-in KIOSK', () => {
         
     })
 
-    it('TC_UI_002 - Patient Appointment not found', () => {
+    xit('TC_UI_002 - Patient Appointment not found', () => {
 
         WelcomePage.startCheckin(patientData.invalidLastName, patientData.invalidDOB)
         WelcomePage.getPopupMsg().should('have.text', patientData.popupMsg)
@@ -25,7 +25,7 @@ describe('Patient Check-in KIOSK', () => {
     
     })
   
-    it('TC_UI_003 - Check-in by Authorized guardian', () => {
+    xit('TC_UI_003 - Check-in by Authorized guardian', () => {
 
       WelcomePage.startCheckin(patientData.validLastName, patientData.validDOB);
       WelcomePage.clickGuardianBtn();
