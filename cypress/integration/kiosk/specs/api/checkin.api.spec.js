@@ -36,7 +36,7 @@ describe('Patient demographics', () => {
             })
     })
 
-    it('TC_API-003: POST patient details', function() {
+    xit('TC_API-003: POST patient details', function() {
         
         cy.request( {
             method : "POST",
