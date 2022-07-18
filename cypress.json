@@ -1,0 +1,14 @@
+{
+  
+  "projectId": "5qe1y2",
+
+  "chromeWebSecurity": false,
+  "testFiles": "**/*.spec.js",
+  "video":false,	
+  
+  "baseUrl": "https://org1-kiosk.raintreeinc.com/?location=ZZPOC",
+  
+  "env": {
+      "apiURL": "https://org1-kiosk.raintreeinc.com/?location=ZZPOC"
+  }
+}
