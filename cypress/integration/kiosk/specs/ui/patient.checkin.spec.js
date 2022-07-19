@@ -17,7 +17,7 @@ describe('Patient Check-in KIOSK', () => {
         
     })
 
-    xit('TC_UI_002 - Patient Appointment not found', () => {
+    it('TC_UI_002 - Patient Appointment not found', () => {
 
         WelcomePage.startCheckin(patientData.invalidLastName, patientData.invalidDOB)
         WelcomePage.getPopupMsg().should('have.text', patientData.popupMsg)
