@@ -1,0 +1,7 @@
+name: Trigger Cypress tests in qa_automation repo
+
+on: [push]
+
+jobs:
+  call-workflow-in-qa_automation-repo:
+    uses: ylnagaraj/loginRT/.github/workflows/cypress_parallel.yml@v1
