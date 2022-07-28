@@ -4,4 +4,4 @@ on: [push]
 
 jobs:
   call-workflow-in-qa_automation-repo:
-    uses: ylnagaraj/loginRT/.github/workflows/cypress_parallel.yml@main
+    uses: ylnagaraj/loginRT/.github/workflows/trigger-by-dev-push.yml@main
